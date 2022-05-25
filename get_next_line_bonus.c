@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.c                                    :+:      :+:    :+:   */
+/*   get_next_line_bonus.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccamargo <ccamargo@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/24 00:08:30 by ccamargo          #+#    #+#             */
-/*   Updated: 2022/05/24 00:08:32 by ccamargo         ###   ########.fr       */
+/*   Updated: 2022/05/24 23:34:23 by ccamargo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,12 +92,7 @@ char	*get_next_line(int fd)
 	while (read_count > 0 && !ft_strchr(accumulator[fd], '\n'))
 	{
 		read_count = feed_accumulator(&accumulator[fd], fd);
-		if (read_count == 0 && !ft_strlen(accumulator[fd]))
-		{
-			freethis(&accumulator[fd], NULL);
-			return (NULL);
-		}
-		if (read_count < 0)
+		if (read_count <= 0 && !ft_strlen(accumulator[fd]))
 		{
 			freethis(&accumulator[fd], NULL);
 			return (NULL);
