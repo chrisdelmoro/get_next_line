@@ -5,6 +5,9 @@
   <p align="center">
     Reading a line on a fd is way too tedious.
     <br/>
+    <img src="https://img.shields.io/badge/Mandatory-OK-brightgreen"/>
+    <img src="https://img.shields.io/badge/Bonus-OK-brightgreen"/>
+    <img src="https://img.shields.io/badge/Final%20Score-125-blue"/>
   </p>
 </p>
 
