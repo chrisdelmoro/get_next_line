@@ -1,6 +1,6 @@
 <br/>
 <p align="center">
-    <img src="https://github.com/chrisdelmoro/42cursus/blob/main/badges/get_next_linen.png" alt="Logo" width="150" height="150">
+    <img src="https://github.com/chrisdelmoro/42cursus/blob/main/badges/get_next_linem.png" alt="Logo" width="150" height="150">
 
   <p align="center">
     Reading a line on a fd is way too tedious.
